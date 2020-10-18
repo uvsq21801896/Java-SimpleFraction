@@ -103,7 +103,7 @@ Quel impact cela aura sur l'implémentation ?
 1. Ajouter un constructeur initialisant la fraction avec un numérateur et un dénominateur (test `shouldInitializeAFractionFromTwoNumbers`)
 1. Quels attributs doit-on ajouter ?
 Quels [modificateurs](https://docs.oracle.com/javase/specs/jls/se11/html/jls-8.html#jls-8.3.1) doit-on leur appliquer ?
-    * RÉPONDRE ICI
+    * on doit leur appliquer des modificateurs privés.
 1. Ajouter des accesseurs pour le numérateur et le dénominateur
 1. Ajouter deux constructeurs (utiliser `this` de la façon présentée dans [How do I call one constructor from another in Java?](https://stackoverflow.com/a/285187/3982584)) :
     1. avec le numérateur (dénominateur égal à _1_) (test `shouldInitializeAFractionFromOneNumber`)
