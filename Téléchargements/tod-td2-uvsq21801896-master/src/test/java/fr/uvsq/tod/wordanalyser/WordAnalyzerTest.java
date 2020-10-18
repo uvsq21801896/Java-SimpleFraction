@@ -27,5 +27,25 @@ public class WordAnalyzerTest {
     char res = w.firstRepeatedCharacter();
     assertEquals(0, res);
   }
+  @Test
+  public void expectIForMissisippi() {
+    WordAnalyzer w = new WordAnalyzer("missisippi");
+    char res = w.firstMultipleCharacter();
+    assertEquals('i', res);
+  }
+
+  @Test
+  public void expectZEROForMate() {
+    WordAnalyzer w = new WordAnalyzer("mate");
+    char res = w.firstMultipleCharacter();
+    assertEquals(0, res);
+  }
+  @Test
+  public void expectTForTest() {
+    WordAnalyzer w = new WordAnalyzer("test");
+    char res = w.firstMultipleCharacter();
+    assertEquals('t', res);
+  }
+
 
 }

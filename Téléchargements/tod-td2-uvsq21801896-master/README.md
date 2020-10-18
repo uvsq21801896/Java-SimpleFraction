@@ -58,7 +58,7 @@ La méthode `firstRepeatedCharacter` retourne le 1er caractère répété (adjac
 Le programme [`WordAnalyzerTester`](src/main/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTester.java) vérifie le fonctionnement de cette méthode.
 
 1. Exécuter le programme. Que se passe-t-il ? De quel type d'erreur s'agit-il ? 
-    * RÉPONDRE ICI
+    * Nous constatons que le programme ne réalise pas les tests demandés en raison d'une erreur d'assertion.
 1. Transformer un par un les tests effectués dans [`WordAnalyzerTester`](src/main/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTester.java) en cas de test JUnit (dans la classe [`WordAnalyzerTest`](src/test/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTest.java)).
     * à chaque fois, corriger la méthode `firstRepeatedCharacter` pour que le test passe
 1. Réexécuter l'ensemble des tests pour vérifier le bon fonctionnement de la méthode. 
@@ -68,7 +68,7 @@ La méthode `firstRepeatedCharacter` retourne le 1er caractère répété (non f
 Le programme [`WordAnalyzerTester2`](src/main/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTester2.java) vérifie le fonctionnement de cette méthode.
 
 1. Exécuter le programme. Que se passe-t-il ?
-    * RÉPONDRE ICI
+    * Le programme fait des erreurs d'assertation
 1. Transformer un par un les tests effectués dans [`WordAnalyzerTester2`](src/main/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTester2.java) en cas de test JUnit (dans la classe [`WordAnalyzerTest`](src/test/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTest.java)).
     1. en cas de résultat inattendu, placer un *point d'arrêt* au début du test
     1. utiliser le débogueur en mode pas à pas pour identifier le problème  

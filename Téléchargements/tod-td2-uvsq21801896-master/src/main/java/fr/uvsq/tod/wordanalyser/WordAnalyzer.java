@@ -46,7 +46,7 @@ public class WordAnalyzer {
   }
 
   private int find(char c, int pos) {
-    for (int i = pos; i < word.length(); i++) {
+    for (int i = pos+1; i < word.length(); i++) {
       if (word.charAt(i) == c) {
         return i;
       }
