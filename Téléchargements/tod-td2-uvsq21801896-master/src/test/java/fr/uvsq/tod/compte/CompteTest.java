@@ -7,8 +7,8 @@ import static org.junit.Assert.*;
 public class CompteTest {
   @Test
   public void CreerUnCompteAvecUnSoldeInitial() {
-    Compte compte = new Compte(2000);
-    assertEquals(2000, compte.getBalance());
+    Compte compte = new Compte(100);
+    assertEquals(100, compte.getBalance());
   }
   @Test(expected=IllegalArgumentException.class)
   public void EchoueSiLeSoldeDansLeCompteEstNegatif()
