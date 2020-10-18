@@ -46,6 +46,25 @@ public class WordAnalyzerTest {
     char res = w.firstMultipleCharacter();
     assertEquals('t', res);
   }
+  @Test
+  public void expectFOURForMississippiii() {
+    WordAnalyzer w = new WordAnalyzer("mississippiii");
+    int res = w.countRepeatedCharacters();
+    assertEquals(4, res);
+  }
+
+  @Test
+  public void expectZEROForTest() {
+    WordAnalyzer w = new WordAnalyzer("test");
+    int res = w.countRepeatedCharacters();
+    assertEquals(0, res);
+  }
+  @Test
+  public void expectTFourAabbcdaaaabb() {
+    WordAnalyzer w = new WordAnalyzer("aabbcdaaaabb");
+    int res = w.countRepeatedCharacters();
+    assertEquals(4, res);
+  }
 
 
 }
