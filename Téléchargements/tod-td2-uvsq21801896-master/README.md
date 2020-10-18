@@ -80,7 +80,7 @@ La méthode `countRepeatedCharacters` retourne le nombre de séquences composée
 Le programme [`WordAnalyzerTester3`](src/main/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTester3.java) vérifie le fonctionnement de cette méthode.
 
 1. Exécuter le programme. Que se passe-t-il ?
-    * RÉPONDRE ICI
+    *Le programme fait des erreurs d'assertion.
 1. Transformer un par un les tests effectués dans [`WordAnalyzerTester3`](src/main/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTester3.java) en cas de test JUnit (dans la classe [`WordAnalyzerTest`](src/test/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTest.java)).
     1. en cas de résultat inattendu, placer un *point d'arrêt* au début du test
     1. utiliser le débogueur en mode pas à pas pour identifier le problème  

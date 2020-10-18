@@ -18,7 +18,8 @@ public class Fraction implements Comparable<Fraction> {
   private BigInteger denominator;
 
   public Fraction(BigInteger numerator, BigInteger denominator) {
-
+this.numerator = numerator;
+this.denominator = denominator;
   }
 
   /**
@@ -26,13 +27,17 @@ public class Fraction implements Comparable<Fraction> {
    * @param numerator le numérateur
    */
   public Fraction(BigInteger numerator) {
-
+this.numerator = numerator;
+denominator = BigInteger.valueOf(1);
   }
 
   /**
    * Initialise un nombre rationnel avec 0 comme numérateur et 1 comme dénominateur.
    */
   public Fraction() {
+    this.numerator = BigInteger.valueOf(0);
+    this.denominator = BigInteger.valueOf(1);
+
 
   }
 
@@ -41,7 +46,7 @@ public class Fraction implements Comparable<Fraction> {
    * @return le numérateur
    */
   public BigInteger getNumerator() {
-    return null;
+    return numerator;
   }
 
   /**
@@ -49,7 +54,7 @@ public class Fraction implements Comparable<Fraction> {
    * @return le dénominateur
    */
   public BigInteger getDenominator() {
-    return null;
+    return denominator;
   }
 
   /**
@@ -57,7 +62,14 @@ public class Fraction implements Comparable<Fraction> {
    * @return la valeur de la fraction
    */
   public double doubleValue() {
-    return 0.0;
+    double numerateur;
+    double denominateur;
+    double resultat;
+    numerateur = numerator.doubleValue();
+    denominateur = denominator.doubleValue();
+    resultat = numerateur / denominateur;
+    return resultat;
+
   }
 
   /**
@@ -76,6 +88,14 @@ public class Fraction implements Comparable<Fraction> {
    */
   @Override
   public int compareTo(Fraction aFraction) {
-    return 0;
+    if (this.doubleValue() == aFraction.doubleValue())
+      return 0;
+    else
+    if(this.doubleValue() < aFraction.doubleValue())
+      return -1;
+
+
+    else
+      return 1;
   }
 }
